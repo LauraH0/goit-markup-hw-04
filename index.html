@@ -26,7 +26,9 @@
           >
           <ul class="header-link-list list">
             <li class="heder-menu">
-              <a href="./index.html" class="header-link link">Studio</a>
+              <a href="./index.html" class="header-link header-link-first link"
+                >Studio</a
+              >
             </li>
             <li class="heder-menu">
               <a href="./portfolio.html" class="header-link link">Portfolio</a>
@@ -411,8 +413,13 @@
 
     <div data-modal class="modal is-hidden">
       <div class="conteiner-modal">
-        <button type="button" data-modal-close class="type-modal"></button>
+        <button type="button" data-modal-close class="type-modal">
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
