@@ -696,5 +696,5 @@ img {
 
 .modal-icon:focus,
 .modal-icon:hover {
-  fill: var(--white-color);
+  fill: #ffffff;
 }
