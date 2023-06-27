@@ -687,7 +687,7 @@ img {
 
 .conteiner-modal:hover,
 .type-modal:focus {
-  background-color: var(--button-color);
+  background-color: #404bbf;
   border: none;
 }
 
@@ -695,7 +695,10 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
 .modal-icon:focus {
+  fill: var(--white-color);
+}
+
+.modal-icon:hover {
   fill: var(--white-color);
 }
