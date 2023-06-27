@@ -113,7 +113,6 @@ img {
 .header-link-first {
   position: relative;
   color: var(--button-color);
-  border-bottom: 4px solid var(--button-color);
 }
 
 .header-list {
@@ -133,15 +132,15 @@ img {
   gap: 40px;
 }
 
-.header-link::after {
+.header-link-first::after {
   content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
   height: 4px;
+  width: 100%;
   background-color: var(--button-color);
   border-radius: 2px;
-
 }
 
 .header-link:hover,
@@ -685,7 +684,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.conteiner-modal:hover,
+.type-modal:hover,
 .type-modal:focus {
   background-color: #404bbf;
   border: none;
