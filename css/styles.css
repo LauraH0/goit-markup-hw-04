@@ -10,8 +10,8 @@
   --button-color: #404bbf;
   --logo-color: #2e2f42;
   --button-color-portf: #e7e9fc;
-  --icon-five-color: #8E8F99;
-  --green: #31D0AA;
+  --icon-five-color: #8e8f99;
+  --green: #31d0aa;
 }
 
 body {
@@ -92,8 +92,7 @@ img {
 .page-header {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 1px 6px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo {
@@ -133,7 +132,7 @@ img {
 }
 
 .header-link-first::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -184,8 +183,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-link:hover,
-.address-link:focus {
+.address-list:hover,
+.address-list:focus {
   color: var(--button-color);
 }
 
@@ -201,8 +200,11 @@ img {
 
   max-width: 1440px;
   margin: 0 auto;
-  padding-bottom: 72px;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -214,7 +216,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   min-height: 120px;
-  margin: 0 auto 48px;
+  margin: 0 auto;
   max-width: 496px;
 }
 
@@ -278,13 +280,13 @@ img {
 
 .second-section-icon {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 264px;
-    height: 112px;
-    border-radius: 4px;
-    background-color: var(--gray-background-color);
-    margin-bottom: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--gray-background-color);
+  margin-bottom: 8px;
 }
 
 .third-section {
@@ -313,7 +315,7 @@ img {
 
 .fourd {
   background-color: var(--gray-background-color);
-  padding: 120px 0
+  padding: 120px 0;
 }
 
 .fourd-title {
@@ -331,8 +333,7 @@ img {
   width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .fourd-section-list {
@@ -352,7 +353,7 @@ img {
 }
 
 .card-content {
-  padding: 32px 0
+  padding: 32px 0;
 }
 
 .fourd-text {
@@ -363,13 +364,6 @@ img {
   margin-right: auto;
   text-align: center;
   margin-bottom: 8px;
-}
-
-.fourd-section-list {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  margin-top: 16px;
 }
 
 .fourd-list-icon {
@@ -406,7 +400,6 @@ img {
 
 .fourd-icon {
   fill: var(--gray-background-color);
-  
 }
 
 .fourd-link-icon:hover {
@@ -457,15 +450,6 @@ img {
   border-color: var(--button-color);
 }
 
-.five-link:hover .five-icon {
-  fill: var(--button-color);
-}
-
-
-
-
-
-
 .over-list {
   display: flex;
   justify-content: center;
@@ -478,7 +462,6 @@ img {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-
 }
 
 .section-title {
@@ -494,6 +477,7 @@ img {
   padding: 12px 24px;
   border: 1px solid var(--button-color-portf);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-title:hover,
@@ -501,6 +485,8 @@ img {
   background-color: var(--button-color);
   color: var(--white-color);
   border: 1px solid transparent;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portf-first-section {
@@ -510,7 +496,7 @@ img {
 
 .portf-list {
   width: calc((100% - 48px) / 3);
-  
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portf-list-container {
@@ -518,6 +504,14 @@ img {
   border: 1px solid var(--button-color-portf);
   border-top: none;
 }
+
+.portf-list:hover,
+.portf-list:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 
 .cart-link {
   text-decoration: none;
@@ -560,21 +554,20 @@ img {
   transition: transform 250ms ease-in-out;
 }
 
-.portf-list:hover .overlay {
+.cart-link:hover .overlay {
   transform: translateY(0);
 }
 
 .overlay-text {
   display: flex;
-    width: 296px;
-    font-size: 16px;
-    font-family: var(--primary-font);
-    line-height: 24px;
-    letter-spacing: 0.32px;
-    color: var(--gray-background-color);
-    flex-direction: column;
+  width: 296px;
+  font-size: 16px;
+  font-family: var(--primary-font);
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  color: var(--gray-background-color);
+  flex-direction: column;
 }
-
 
 .footer-container {
   display: flex;
@@ -593,10 +586,6 @@ img {
 
 .footer-first-container {
   margin-right: 120px;
-}
-
-.footer-social {
-  margin-left: 120px;
 }
 
 .footer-section-list {
@@ -624,7 +613,6 @@ img {
 .footer-link:focus {
   background-color: var(--green);
 }
-
 
 .footer-logo {
   color: var(--primary-blue-color);
@@ -664,7 +652,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -681,8 +670,7 @@ img {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -702,7 +690,8 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .type-modal:hover,
